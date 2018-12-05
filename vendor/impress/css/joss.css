@@ -4,13 +4,32 @@ p {
 }
 
 p.desc {
-  font-size: 24px;
+  font-size: 21px;
   line-height: 26px;
 }
 
 p.title {
   font-size: 70px;
   line-height: 65px;
+}
+
+ul {
+  color: rgb(102, 102, 102);
+  font-size: 24px;
+  line-height: 30px;
+  list-style: unset;
+}
+
+ul li + li  {
+  margin-top: 10px;
+}
+
+ul li ul {
+  padding-left: 20px;
+}
+
+ul li ul li {
+  margin-top: 10px;
 }
 
 .coverpage {
@@ -40,6 +59,9 @@ p.title {
 }
 .wrrp-flex.rows {
   flex-flow: wrap;
+}
+.wrrp-flex.column {
+  flex-flow: column
 }
 .wrrp-flex.rows div {
   justify-content: space-between;
@@ -71,6 +93,70 @@ p.title {
 }
 .img100 .image img {
 	width: 100%;
+}
+
+img {
+  max-width: 100%;;
+}
+
+span.timeline {
+  bottom: 0;
+  height: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+span.timeline p {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 70px;
+  font-size: 50px;
+  font-weight: 900;
+}
+span.timeline span {
+  font-weight: 900;
+  color: #E74C3C;
+  display: inline-block;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.up {
+  position: relative;
+  z-index: 10;
+}
+
+.column > span {
+  width: 100%;
+}
+
+.column::after {
+  content: "";
+  /* background: #00aea7; */
+  height: 20%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.column .desc {
+  text-align: left;
+  /* color: #fff; */
+}
+
+.trans {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.onlyimage {
+  align-items: center;
+  justify-content: center;
+}
+.onlyimage img {
+  display: inline-block;
 }
 
 
